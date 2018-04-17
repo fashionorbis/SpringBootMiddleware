@@ -1,9 +1,6 @@
 package com.aa.hackwars5.hackoverflow.SpringBootMiddleware.controllers;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.aa.hackwars5.hackoverflow.SpringBootMiddleware.dto.Response;
 
 @RestController
@@ -14,7 +11,7 @@ public class EstimateTimeController {
         return "Hello";
     }
 
-    @GetMapping("/estimate")
+    @PostMapping("/estimate")
     @ResponseBody
     public Response estimate (
 
