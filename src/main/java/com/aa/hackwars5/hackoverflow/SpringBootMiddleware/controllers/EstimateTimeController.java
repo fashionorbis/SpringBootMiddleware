@@ -25,6 +25,8 @@ public class EstimateTimeController {
         System.out.println(checkInBags);
         System.out.println(boardingPass);
 
-        return new Response("Good to leave at 7:10PM","Good to leave at 7:10PM", "Middleware");
+        return new Response(" for "+flightNumber+" if you "+uber+" uber and "+checkInBags+" checkin bags "+" boarding pass"+boardingPass+" Good to leave at 7:10PM",
+                " for "+flightNumber+" if you "+uber+" uber and "+checkInBags+" checkin bags "+" boarding pass"+boardingPass+" Good to leave at 7:10PM",
+                "Middleware");
     }
 }
